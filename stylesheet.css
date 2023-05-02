@@ -1,0 +1,375 @@
+html {
+    background-color: black;
+  }
+  
+  .navbar-toggler-icon:active,
+  .btn-close:active {
+    border: 2px solid var(--bs-warning-border-subtle);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .appstore-cta img {
+    max-height: 48px;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 0px 20px;
+  }
+  
+  .app-screen {
+    flex-grow: 1;
+  }
+  
+  .app-screen-even {
+    flex-grow: 1.2;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .new-card--img {
+    max-width: 64px;
+    object-fit: contain;
+    overflow: hidden;
+  }
+  
+  .ex-card--img {
+    max-width: 280px;
+  }
+  
+  .ex-card--caption {
+    max-width: 320px;
+    font-size: small;
+  }
+  
+  .ex-card--thumb {
+    max-width: 64px;
+  }
+  
+  .re-card--img {
+    max-width: 320px;
+  }
+  
+  .re-card--thumb {
+    max-width: 64px;
+  }
+  
+  .text-secondary {
+    font-size: 14px;
+  }
+  .what-new {
+    max-width: 639px;
+  }
+  
+  .expresso {
+    max-width: 1023px;
+  }
+  
+  .ex-section--body {
+    width: 100%;
+  }
+  
+  .results {
+    max-width: 767px;
+  }
+  
+  .scales-card {
+    max-width: 767px;
+  }
+  
+  .carousel-card {
+    width: 400px;
+    height: 100%;
+  }
+  
+  .track--1 {
+    height: 220px;
+    animation-name: myanimation;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  .track--2 {
+    top: 230px;
+    height: 190px;
+    animation: myanimation 200s alternate-reverse linear infinite;
+    padding-bottom: 5px;
+  }
+  .track--3 {
+    top: 425px;
+    height: 220px;
+    animation: myanimationlast 250s alternate linear infinite;
+  }
+  
+  @keyframes myanimation {
+    0% {
+      left: -2000px;
+    }
+    100% {
+      left: -1250px;
+    }
+  }
+  
+  @keyframes myanimationlast {
+    0% {
+      left: -1800px;
+    }
+    100% {
+      left: -0px;
+    }
+  }
+  
+  .customer {
+    max-width: 600px;
+  }
+  
+  .customer img {
+    height: 30px;
+    opacity: 0.5;
+  }
+  
+  .customer img:hover {
+    opacity: 1;
+  }
+  
+  .review {
+    height: 1000px;
+  }
+  
+  .social {
+    width: 35px;
+    filter: brightness(0) invert(1);
+    display: inline-block;
+  }
+  
+  .social img {
+    width: 100%;
+  }
+  
+  @media (min-width: 640px) {
+    .what-new {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    .new-section--body {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 15px;
+      max-width: 1216px;
+    }
+  
+    .new-card {
+      margin: 0;
+      width: 288px;
+      flex-grow: 1;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-nav {
+      background-color: black;
+      gap: 20px;
+    }
+  
+    .nav-item .btn-warning {
+      background-color: white;
+      color: black !important;
+      border-color: white;
+    }
+  
+    .container-fluid {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  
+    .hero-cta {
+      margin-top: 40px;
+    }
+  
+    .results {
+      max-width: 1216px;
+    }
+  
+    .re-section--body {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .re-card {
+      width: 348px;
+      max-width: 596px;
+      flex-grow: 1;
+    }
+  
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      min-height: 338px;
+    }
+  
+    .scales-card--list-pad {
+      padding-bottom: 42px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .navbar {
+      padding-top: 15px;
+    }
+  
+    .nav-logo {
+      height: 64px !important;
+    }
+  
+    .container-fluid {
+      max-width: 1216px;
+    }
+  
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+  
+    .main-title {
+      margin-top: 130px;
+      font-size: 60px !important;
+      max-width: 1024px;
+      text-align: center;
+    }
+  
+    .hero-text {
+      max-width: 768px;
+      font-size: 24px !important;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .mobile-app {
+      margin-top: 130px !important;
+    }
+  
+    .out-cols {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+    }
+  
+    .inner-col {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  
+    .what-new {
+      margin-top: 200px !important;
+    }
+  
+    .expresso {
+      max-width: 1216px;
+    }
+  
+    .new-pre-title,
+    .expresso-pre-title {
+      font-size: 16px;
+    }
+  
+    .new-title,
+    .expresso-title {
+      font-size: 60px !important;
+    }
+  
+    .ex-section--body {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      width: 100%;
+    }
+  
+    .ex-card {
+      width: 438px;
+      height: 608px !important;
+      max-width: 596px;
+      flex-grow: 1;
+      margin-bottom: 0 !important;
+    }
+  
+    .ex-card--img-one img {
+      margin-top: 50px;
+    }
+  
+    .ex-card--head h3,
+    .re-card--head h3 {
+      font-size: 36px;
+    }
+  
+    .ex-card--head p,
+    .re-card--head p {
+      font-size: 16px;
+    }
+  
+    .ex-card--last,
+    .re-card--last {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
+    }
+  
+    .re-card {
+      height: 640px;
+    }
+  
+    .review h2 {
+      font-size: 60px !important;
+    }
+  
+    footer {
+      margin: auto;
+      max-width: 1216px;
+    }
+  
+    .footer-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .left-col {
+      width: 500px;
+    }
+  
+    .row-collapse {
+      width: 100%;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
+  Footer
